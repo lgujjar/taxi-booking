@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Deploy to tomcat'){
             steps{
-                deploy adapters: [tomcat9(credentialsId: '527db3ea-545b-436b-bcbd-3c786d08d357', path: '', url: 'http://http://13.60.49.58/:8080/')], contextPath: 'goutham', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: '527db3ea-545b-436b-bcbd-3c786d08d357', path: '', url: 'http://16.171.35.182/:8080/')], contextPath: 'goutham', war: '**/*.war'
             }
         }
     }
